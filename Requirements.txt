@@ -1,0 +1,6 @@
+flask
+flask-cors
+flask-socketio
+tensorflow-cpu
+numpy
+joblib
