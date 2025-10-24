@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SignSpeak - ISL Recognition</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>SignSpeak</h1>
+    <button id="startBtn">Start Recognition</button>
+    <button id="stopBtn">Stop Camera</button>
+  </header>
+
+  <main>
+    <section id="camera-section">
+      <video id="webcam" autoplay playsinline></video>
+    </section>
+
+    <section id="result-section">
+      <h2>Predicted Sign</h2>
+      <p id="prediction">-</p>
+      <p>Status: <span id="status">Idle</span></p>
+    </section>
+
+    <!-- 🌐 New Section: Speech to Sign Translator -->
+    <section id="speech-to-sign">
+      <h2>Speech to Text Translator </h2>
+      <button id="speechBtn">🎤 Start Speaking</button>
+      <p id="speechText">Say something...</p>
+      <div id="signDisplay" class="sign-display"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 SignSpeak. All rights reserved.</p>
+  </footer>
+
+  <!-- Existing Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

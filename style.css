@@ -1,0 +1,182 @@
+:root {
+  --primary-color: #1193d4;
+  --bg-color: #111618;
+  --card-color: #1a2024;
+  --text-color: #ffffff;
+  --border-color: #283339;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: rgba(17, 22, 24, 0.9);
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+header button {
+  background: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 0.85;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+#camera-section video {
+  width: 640px;
+  height: 480px;
+  background: black;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+}
+
+#result-section {
+  background: var(--card-color);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  width: 250px;
+  text-align: center;
+}
+
+#prediction {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 15px 0;
+}
+
+#status {
+  font-weight: bold;
+  color: limegreen;
+}
+
+footer {
+  background: var(--card-color);
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  border-top: 1px solid var(--border-color);
+}
+/* --------------------------- */
+/* 🌐 Speech to Sign Section   */
+/* --------------------------- */
+#speech-to-sign {
+  background: var(--card-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#speech-to-sign h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+#speechBtn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+
+#speechBtn:hover {
+  opacity: 0.85;
+}
+
+#speechText {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #b0bec5;
+}
+
+.sign-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  background: #161b1d;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-width: 350px;
+}
+
+.sign-display img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #000;
+  padding: 5px;
+  transition: transform 0.3s;
+}
+
+.sign-display img:hover {
+  transform: scale(1.1);
+}
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#stopBtn {
+  background: #e63946; /* red for stop */
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#stopBtn:hover {
+  opacity: 0.85;
+}
